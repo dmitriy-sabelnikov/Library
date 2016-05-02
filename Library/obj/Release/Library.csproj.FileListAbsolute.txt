@@ -1,0 +1,16 @@
+D:\Library\Library\bin\Release\Books_Library.exe.config
+D:\Library\Library\bin\Release\Books_Library.exe
+D:\Library\Library\bin\Release\Books_Library.pdb
+D:\Library\Library\obj\Release\Library.csproj.GenerateResource.Cache
+D:\Library\Library\obj\Release\Books_Library.exe
+D:\Library\Library\obj\Release\Books_Library.pdb
+D:\Library\Library\bin\Release\Entities.dll
+D:\Library\Library\bin\Release\Entities.pdb
+D:\Library\Library\obj\Release\Library.csprojResolveAssemblyReference.cache
+D:\Library\Library\bin\Release\Library.DataAccess.dll
+D:\Library\Library\bin\Release\Library.Forms.dll
+D:\Library\Library\bin\Release\Library.BusinessLogic.dll
+D:\Library\Library\bin\Release\Library.DataAccess.pdb
+D:\Library\Library\bin\Release\Library.Forms.pdb
+D:\Library\Library\bin\Release\Library.BusinessLogic.pdb
+D:\Library\Library\obj\Release\Library.Properties.Resources.resources

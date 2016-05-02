@@ -1,0 +1,13 @@
+C:\Library\Library\Library.Presenters\bin\Debug\Library.Presenters.dll
+C:\Library\Library\Library.Presenters\bin\Debug\Library.Presenters.pdb
+C:\Library\Library\Library.Presenters\obj\Debug\Library.Presenters.dll
+C:\Library\Library\Library.Presenters\obj\Debug\Library.Presenters.pdb
+C:\Library\Library\Library.Presenters\bin\Debug\Entities.dll
+C:\Library\Library\Library.Presenters\bin\Debug\Library.BusinessLogic.dll
+C:\Library\Library\Library.Presenters\bin\Debug\Library.Views.dll
+C:\Library\Library\Library.Presenters\bin\Debug\Library.DataAccess.dll
+C:\Library\Library\Library.Presenters\bin\Debug\Entities.pdb
+C:\Library\Library\Library.Presenters\bin\Debug\Library.BusinessLogic.pdb
+C:\Library\Library\Library.Presenters\bin\Debug\Library.Views.pdb
+C:\Library\Library\Library.Presenters\bin\Debug\Library.DataAccess.pdb
+C:\Library\Library\Library.Presenters\obj\Debug\Library.Presenters.csprojResolveAssemblyReference.cache

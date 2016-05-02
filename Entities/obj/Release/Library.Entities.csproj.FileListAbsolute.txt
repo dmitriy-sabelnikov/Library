@@ -1,0 +1,5 @@
+D:\Library\Entities\bin\Release\Entities.dll
+D:\Library\Entities\bin\Release\Entities.pdb
+D:\Library\Entities\obj\Release\Library.Entities.csprojResolveAssemblyReference.cache
+D:\Library\Entities\obj\Release\Entities.dll
+D:\Library\Entities\obj\Release\Entities.pdb

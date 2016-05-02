@@ -1,0 +1,10 @@
+D:\Library\Library.Views\obj\Debug\Library.Views.csprojResolveAssemblyReference.cache
+D:\Library\Library.Views\bin\Debug\Library.Views.dll
+D:\Library\Library.Views\bin\Debug\Library.Views.pdb
+D:\Library\Library.Views\obj\Debug\Library.Views.dll
+D:\Library\Library.Views\obj\Debug\Library.Views.pdb
+C:\Library\Library\Library.Views\bin\Debug\Library.Views.dll
+C:\Library\Library\Library.Views\bin\Debug\Library.Views.pdb
+C:\Library\Library\Library.Views\obj\Debug\Library.Views.csprojResolveAssemblyReference.cache
+C:\Library\Library\Library.Views\obj\Debug\Library.Views.dll
+C:\Library\Library\Library.Views\obj\Debug\Library.Views.pdb

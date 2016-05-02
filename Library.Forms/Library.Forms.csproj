@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9419B8CB-8BB3-4E60-8CAB-FFED553CDBA4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library.Forms</RootNamespace>
+    <AssemblyName>Library.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddBook.Designer.cs">
+      <DependentUpon>FormAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddMagazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddMagazine.Designer.cs">
+      <DependentUpon>FormAddMagazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddNewspaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddNewspaper.Designer.cs">
+      <DependentUpon>FormAddNewspaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLibrary.Designer.cs">
+      <DependentUpon>FormLibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoadXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveXML.Designer.cs">
+      <DependentUpon>FormSaveXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchBook.Designer.cs">
+      <DependentUpon>FormSearchBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchMagazine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchMagazine.Designer.cs">
+      <DependentUpon>FormSearchMagazine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSearchNewspaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSearchNewspaper.Designer.cs">
+      <DependentUpon>FormSearchNewspaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAddBook.resx">
+      <DependentUpon>FormAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddMagazine.resx">
+      <DependentUpon>FormAddMagazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddNewspaper.resx">
+      <DependentUpon>FormAddNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLibrary.resx">
+      <DependentUpon>FormLibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoadXML.resx">
+      <DependentUpon>FormLoadXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveXML.resx">
+      <DependentUpon>FormSaveXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchBook.resx">
+      <DependentUpon>FormSearchBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchMagazine.resx">
+      <DependentUpon>FormSearchMagazine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSearchNewspaper.resx">
+      <DependentUpon>FormSearchNewspaper.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Library.Entities.csproj">
+      <Project>{b84b21d1-71f0-4a38-bbe6-9c1606f47fb9}</Project>
+      <Name>Library.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.BusinessLogic\Library.BusinessLogic.csproj">
+      <Project>{49026f04-2c55-4135-99a7-cd278dbcedfe}</Project>
+      <Name>Library.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.DataAccess\Library.DataAccess.csproj">
+      <Project>{415f16b7-ba70-45dd-b9e0-07fcab3a1976}</Project>
+      <Name>Library.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Presenters\Library.Presenters.csproj">
+      <Project>{22e6fbc0-9207-4eef-a2b2-71c23d7b13d6}</Project>
+      <Name>Library.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Views\Library.Views.csproj">
+      <Project>{b424640e-8203-4244-ae04-6718dde6d9f7}</Project>
+      <Name>Library.Views</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

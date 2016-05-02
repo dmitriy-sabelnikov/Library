@@ -1,0 +1,9 @@
+D:\Library\Library.BusinessLogic\bin\Release\Library.BusinessLogic.dll
+D:\Library\Library.BusinessLogic\bin\Release\Library.BusinessLogic.pdb
+D:\Library\Library.BusinessLogic\obj\Release\Library.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Library\Library.BusinessLogic\obj\Release\Library.BusinessLogic.dll
+D:\Library\Library.BusinessLogic\obj\Release\Library.BusinessLogic.pdb
+D:\Library\Library.BusinessLogic\bin\Release\Entities.dll
+D:\Library\Library.BusinessLogic\bin\Release\Entities.pdb
+D:\Library\Library.BusinessLogic\bin\Release\Library.DataAccess.dll
+D:\Library\Library.BusinessLogic\bin\Release\Library.DataAccess.pdb

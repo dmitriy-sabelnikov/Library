@@ -1,0 +1,15 @@
+D:\Books_Library\Books_Library\bin\Debug\Books_Library.exe.config
+D:\Books_Library\Books_Library\bin\Debug\Books_Library.exe
+D:\Books_Library\Books_Library\bin\Debug\Books_Library.pdb
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.FormAddBook.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.FormAddNewspaper.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.FormLibrary.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.FormSearchBook.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.FormSearchNewspaper.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.Properties.Resources.resources
+D:\Books_Library\Books_Library\obj\Debug\BooksLibrary.csproj.GenerateResource.Cache
+D:\Books_Library\Books_Library\obj\Debug\Books_Library.exe
+D:\Books_Library\Books_Library\obj\Debug\Books_Library.pdb
+D:\BooksLibrary\Books_Library\bin\Debug\Books_Library.exe.config
+D:\BooksLibrary\Books_Library\obj\Debug\Books_Library.exe
+D:\BooksLibrary\Books_Library\obj\Debug\Books_Library.pdb

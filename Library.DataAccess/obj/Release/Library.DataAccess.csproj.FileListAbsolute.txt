@@ -1,0 +1,7 @@
+D:\Library\Library.DataAccess\bin\Release\Library.DataAccess.dll
+D:\Library\Library.DataAccess\bin\Release\Library.DataAccess.pdb
+D:\Library\Library.DataAccess\obj\Release\Library.DataAccess.dll
+D:\Library\Library.DataAccess\obj\Release\Library.DataAccess.pdb
+D:\Library\Library.DataAccess\obj\Release\Library.DataAccess.csprojResolveAssemblyReference.cache
+D:\Library\Library.DataAccess\bin\Release\Entities.dll
+D:\Library\Library.DataAccess\bin\Release\Entities.pdb
