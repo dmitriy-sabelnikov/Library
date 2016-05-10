@@ -11,19 +11,19 @@ namespace Library.Presenters
 {
     public class LoadNewspaperPresenter
     {
-        ILoadSaveXMLView p_loadSaveXML;
+        ILoadSaveXMLView _loadSaveXML;
 
-        public LoadNewspaperPresenter(ILoadSaveXMLView m_loadSaveXML)
+        public LoadNewspaperPresenter(ILoadSaveXMLView loadSaveXML)
         {
-            p_loadSaveXML = m_loadSaveXML;
+            _loadSaveXML = loadSaveXML;
         }
 
         public void LoadNewspaperXML ()
         {
-            if (p_loadSaveXML.PathToXml != String.Empty)
+            if (_loadSaveXML.PathToXml != String.Empty)
             {
                 GridSource.BookLibrary.UnionListNewspapers(
-                    XMLDataAccess.LoadFromXmlNewspapers(p_loadSaveXML.PathToXml));
+                    XMLDataAccess.LoadFromXmlNewspapers(_loadSaveXML.PathToXml));
             }
         }
 

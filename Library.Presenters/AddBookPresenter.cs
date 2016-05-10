@@ -10,24 +10,16 @@ namespace Library.Presenters
 {
     public class AddBookPresenter
     {
-        private IAddBookView m_bookView;
+        private IAddBookView _bookView;
 
-        public AddBookPresenter(IAddBookView p_bookView)
+        public AddBookPresenter(IAddBookView bookView)
         {
-            m_bookView = p_bookView;
+            _bookView = bookView;
         }
 
         public void AddBook()
         {
-            GridSource.BookLibrary.AddBook(m_bookView.Code, m_bookView.NameBook, m_bookView.Author);
-        }
-
-        public void RefreshGrid(DataGridView gridLibrary)
-        {
-            GridSource.ClearGrid(gridLibrary);
-            GridSource.FillLibraryByBooks(gridLibrary, GridSource.BookLibrary.GetAllBook());
-            GridSource.FillLibraryByNewspapers(gridLibrary, GridSource.BookLibrary.GetAllNewspaper());
-            GridSource.FillLibraryByMagazines(gridLibrary, GridSource.BookLibrary.GetAllMagazine());
+            GridSource.BookLibrary.AddBook(_bookView.Code, _bookView.NameBook, _bookView.Author);
         }
     }
 }

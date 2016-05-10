@@ -14,7 +14,7 @@ namespace Library
 {
     public partial class FormAddBook : Form, IAddBookView
     {
-        private AddBookPresenter addBookPresenter;
+        private AddBookPresenter _addBookPresenter;
 
         public string Code { get; set; }
         public string Author { get; set; }
@@ -23,11 +23,7 @@ namespace Library
         public FormAddBook()
         {    
             InitializeComponent();
-        }
-
-        public void AttachPresenter (AddBookPresenter addBookPresenter)
-        {
-            this.addBookPresenter = addBookPresenter;
+            _addBookPresenter = new AddBookPresenter(this);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -58,7 +54,7 @@ namespace Library
             Code = txtbxCode.Text;
             Author = txtbxAuthor.Text;
             NameBook = txtbxNameBook.Text;
-            addBookPresenter.AddBook();
+            _addBookPresenter.AddBook();
             this.Close();
         }
     }

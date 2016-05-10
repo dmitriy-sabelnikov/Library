@@ -88,3 +88,7 @@ C:\Library\Library\Library.Forms\bin\Debug\Library.BusinessLogic.pdb
 C:\Library\Library\Library.Forms\bin\Debug\Library.DataAccess.pdb
 C:\Library\Library\Library.Forms\bin\Debug\Library.Presenters.pdb
 C:\Library\Library\Library.Forms\bin\Debug\Library.Views.pdb
+C:\Library\Library.Forms\bin\Debug\Library.Presenters.dll
+C:\Library\Library.Forms\bin\Debug\Library.Views.dll
+C:\Library\Library.Forms\bin\Debug\Library.Presenters.pdb
+C:\Library\Library.Forms\bin\Debug\Library.Views.pdb

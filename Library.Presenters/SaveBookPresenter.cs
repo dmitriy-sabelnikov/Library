@@ -11,28 +11,20 @@ namespace Library.Presenters
 {
     public class SaveBookPresenter
     {
-        ILoadSaveXMLView p_loadSaveXML;
+        ILoadSaveXMLView _loadSaveXML;
 
-        public SaveBookPresenter (ILoadSaveXMLView m_loadSaveXML)
+        public SaveBookPresenter (ILoadSaveXMLView loadSaveXML)
         {
-            p_loadSaveXML = m_loadSaveXML;
+            _loadSaveXML = loadSaveXML;
         }
 
         public void SaveBookXML ()
         {
-            if (p_loadSaveXML.PathToXml != String.Empty)
+            if (_loadSaveXML.PathToXml != String.Empty)
             {
                 XMLDataAccess.SaveToXmlBooks(
-                    p_loadSaveXML.PathToXml, GridSource.BookLibrary.GetAllBook());
+                    _loadSaveXML.PathToXml, GridSource.BookLibrary.GetAllBook());
             }
         }
-
-        public void RefreshGrid(DataGridView gridLibrary)
-        {
-            GridSource.ClearGrid(gridLibrary);
-            GridSource.FillLibraryByBooks(gridLibrary, GridSource.BookLibrary.GetAllBook());
-            GridSource.FillLibraryByNewspapers(gridLibrary, GridSource.BookLibrary.GetAllNewspaper());
-            GridSource.FillLibraryByMagazines(gridLibrary, GridSource.BookLibrary.GetAllMagazine());
-        }            
     }
 }

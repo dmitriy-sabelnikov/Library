@@ -14,7 +14,7 @@ namespace Library
 {
     public partial class FormAddNewspaper : Form, IAddNewspaperView
     {
-        private AddNewspaperPresenter addNewspaperPresenter;
+        private AddNewspaperPresenter _addNewspaperPresenter;
 
         public string NameNewspaper { get; set; }
         public string Author { get; set; }
@@ -25,11 +25,8 @@ namespace Library
         public FormAddNewspaper()
         {
             InitializeComponent();
-        }
+            _addNewspaperPresenter = new AddNewspaperPresenter(this);
 
-        public void AttachPresenter(AddNewspaperPresenter addNewspaperPresenter)
-        {
-            this.addNewspaperPresenter = addNewspaperPresenter;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -57,7 +54,7 @@ namespace Library
             PublishHouse = txtbxPublishHouse.Text;
             ReleaseDate = dtReleaseDate.Value;
             Periodicity = nPeriodicity.Value;
-            addNewspaperPresenter.AddNewspaper();
+            _addNewspaperPresenter.AddNewspaper();
             this.Close();
 
         }

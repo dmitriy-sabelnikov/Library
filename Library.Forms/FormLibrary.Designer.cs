@@ -259,7 +259,7 @@
             this.exportAllNewspapersToolStripMenuItem,
             this.exportAllMagazinesToolStripMenuItem});
             this.exportToXMLToolStripMenuItem.Name = "exportToXMLToolStripMenuItem";
-            this.exportToXMLToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
+            this.exportToXMLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exportToXMLToolStripMenuItem.Text = "Save to XML";
             // 
             // exportAllBooksToolStripMenuItem

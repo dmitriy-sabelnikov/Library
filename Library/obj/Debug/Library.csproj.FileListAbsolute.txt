@@ -74,3 +74,7 @@ C:\Library\Library\Library\bin\Debug\Library.Presenters.pdb
 C:\Libr\Library\bin\Debug\Library.exe.config
 C:\Libr\Library\obj\Debug\Library.exe
 C:\Libr\Library\obj\Debug\Library.pdb
+C:\Library\Library\bin\Debug\Library.Views.dll
+C:\Library\Library\bin\Debug\Library.Presenters.dll
+C:\Library\Library\bin\Debug\Library.Views.pdb
+C:\Library\Library\bin\Debug\Library.Presenters.pdb

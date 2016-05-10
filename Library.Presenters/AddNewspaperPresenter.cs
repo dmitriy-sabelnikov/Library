@@ -10,26 +10,17 @@ namespace Library.Presenters
 {
     public class AddNewspaperPresenter
     {
-        private IAddNewspaperView m_newspaperView;
+        private IAddNewspaperView _newspaperView;
 
-        public AddNewspaperPresenter(IAddNewspaperView p_newspaperView)
+        public AddNewspaperPresenter(IAddNewspaperView newspaperView)
         {
-            m_newspaperView = p_newspaperView;
+            _newspaperView = newspaperView;
         }
 
         public void AddNewspaper()
         {
-            GridSource.BookLibrary.AddNewspaper(m_newspaperView.NameNewspaper,
-                m_newspaperView.Author, m_newspaperView.PublishHouse, m_newspaperView.ReleaseDate, m_newspaperView.Periodicity);
+            GridSource.BookLibrary.AddNewspaper(_newspaperView.NameNewspaper,
+                _newspaperView.Author, _newspaperView.PublishHouse, _newspaperView.ReleaseDate, _newspaperView.Periodicity);
         }
-
-        public void RefreshGrid(DataGridView gridLibrary)
-        {
-            GridSource.ClearGrid(gridLibrary);
-            GridSource.FillLibraryByBooks(gridLibrary, GridSource.BookLibrary.GetAllBook());
-            GridSource.FillLibraryByNewspapers(gridLibrary, GridSource.BookLibrary.GetAllNewspaper());
-            GridSource.FillLibraryByMagazines(gridLibrary, GridSource.BookLibrary.GetAllMagazine());
-        }
-
     }
 }

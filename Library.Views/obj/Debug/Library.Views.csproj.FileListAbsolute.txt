@@ -8,3 +8,8 @@ C:\Library\Library\Library.Views\bin\Debug\Library.Views.pdb
 C:\Library\Library\Library.Views\obj\Debug\Library.Views.csprojResolveAssemblyReference.cache
 C:\Library\Library\Library.Views\obj\Debug\Library.Views.dll
 C:\Library\Library\Library.Views\obj\Debug\Library.Views.pdb
+C:\Library\Library.Views\obj\Debug\Library.Views.csprojResolveAssemblyReference.cache
+C:\Library\Library.Views\obj\Debug\Library.Views.dll
+C:\Library\Library.Views\obj\Debug\Library.Views.pdb
+C:\Library\Library.Views\bin\Debug\Library.Views.dll
+C:\Library\Library.Views\bin\Debug\Library.Views.pdb

@@ -11,19 +11,19 @@ namespace Library.Presenters
 {
     public class SaveMagazinePresenter
     {
-        ILoadSaveXMLView p_loadSaveXML;
+        ILoadSaveXMLView _loadSaveXML;
 
-        public SaveMagazinePresenter(ILoadSaveXMLView m_loadSaveXML)
+        public SaveMagazinePresenter(ILoadSaveXMLView loadSaveXML)
         {
-            p_loadSaveXML = m_loadSaveXML;
+            _loadSaveXML = loadSaveXML;
         }
 
         public void SaveMagazineXML()
         {
-            if (p_loadSaveXML.PathToXml != String.Empty)
+            if (_loadSaveXML.PathToXml != String.Empty)
             {
                 XMLDataAccess.SaveToXmlMagazines(
-                    p_loadSaveXML.PathToXml, GridSource.BookLibrary.GetAllMagazine());
+                    _loadSaveXML.PathToXml, GridSource.BookLibrary.GetAllMagazine());
             }
         }
 

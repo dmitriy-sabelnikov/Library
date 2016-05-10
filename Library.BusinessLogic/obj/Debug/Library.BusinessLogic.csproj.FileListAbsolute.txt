@@ -38,3 +38,5 @@ C:\Library\Library\Library.BusinessLogic\bin\Debug\Library.Views.pdb
 C:\Library\Library\Library.BusinessLogic\obj\Debug\Library.BusinessLogic.csprojResolveAssemblyReference.cache
 C:\Library\Library\Library.BusinessLogic\obj\Debug\Library.BusinessLogic.dll
 C:\Library\Library\Library.BusinessLogic\obj\Debug\Library.BusinessLogic.pdb
+C:\Library\Library.BusinessLogic\bin\Debug\Library.Views.dll
+C:\Library\Library.BusinessLogic\bin\Debug\Library.Views.pdb

@@ -10,38 +10,20 @@ namespace Library.Presenters
 {
     public class SearchNewspaperPresenter
     {
-        private ISearchNewspaperView m_searchNewspaperView;
+        private ISearchNewspaperView _searchNewspaperView;
 
-        public SearchNewspaperPresenter(ISearchNewspaperView p_searchNewspaperView)
+        public SearchNewspaperPresenter(ISearchNewspaperView searchNewspaperView)
         {
-            m_searchNewspaperView = p_searchNewspaperView;
+            _searchNewspaperView = searchNewspaperView;
         }
 
         public void SearchNewspaper()
         {
             GridSource.ResultSearchNewspaper =
                 SearchPublication.FindNewspaper(GridSource.BookLibrary.GetAllNewspaper(),
-                    m_searchNewspaperView.NameNewspaper, m_searchNewspaperView.Author,
-                    m_searchNewspaperView.PublishHouse, m_searchNewspaperView.ReleaseDate,
-                    m_searchNewspaperView.Periodicity);
+                    _searchNewspaperView.NameNewspaper, _searchNewspaperView.Author,
+                    _searchNewspaperView.PublishHouse, _searchNewspaperView.ReleaseDate,
+                    _searchNewspaperView.Periodicity);
         }
-
-        public void RefreshGrid(DataGridView gridLibrary)
-        {
-            if (GridSource.ResultSearchNewspaper == null)
-            {
-                return;
-            }
-            if (GridSource.ResultSearchNewspaper.Count > 0)
-            {
-                GridSource.ClearGrid(gridLibrary);
-                GridSource.FillLibraryByNewspapers(gridLibrary, GridSource.ResultSearchNewspaper);
-            }
-            else
-            {
-                MessageBox.Show("I can't find newspaper");
-            }
-        }
-
     }
 }

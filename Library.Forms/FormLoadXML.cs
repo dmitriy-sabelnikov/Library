@@ -1,4 +1,5 @@
-﻿using Library.Views;
+﻿using Library.Presenters;
+using Library.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace Library.Forms
     public partial class FormLoadXML : Form, ILoadSaveXMLView
     {
         public string PathToXml { get; set; }
+        private LoadBookXMLPresenter _loadBookXML;
 
         private Panel pnLoadXml;
         private Panel pnControlLoadXML;
@@ -23,10 +25,28 @@ namespace Library.Forms
         private Button btnCancel;
         private Button btnChoose;
         private OpenFileDialog openFileDialogXML;
-    
-        public FormLoadXML()
+        private LoadNewspaperPresenter _loadNewspaperXML;
+        private LoadMagazineXMLPresenter _loadMagazineXML;
+
+        private PublicationType _publicationType;
+
+        public FormLoadXML(PublicationType publicationType)
         {
             InitializeComponent();
+            _publicationType = publicationType;
+            if (_publicationType == PublicationType.book)
+            {
+                _loadBookXML = new LoadBookXMLPresenter(this);
+            }
+            if (_publicationType == PublicationType.newspaper)
+            {
+                _loadNewspaperXML = new LoadNewspaperPresenter(this);
+
+            }
+            if (_publicationType == PublicationType.magazine)
+            {
+                _loadMagazineXML = new LoadMagazineXMLPresenter(this);
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -37,6 +57,17 @@ namespace Library.Forms
 
         private void btnChoose_Click(object sender, EventArgs e)
         {
+            if (_publicationType == PublicationType.book)
+            {
+                _loadBookXML.LoadBookXML();
+            }
+            if (_publicationType == PublicationType.newspaper)
+            {
+            }
+            if (_publicationType == PublicationType.magazine)
+            {
+            }
+
             this.Close();
         }
 

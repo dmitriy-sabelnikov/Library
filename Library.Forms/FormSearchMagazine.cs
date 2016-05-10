@@ -19,16 +19,12 @@ namespace Library.Forms
         public string PublishMonth { get; set; }
         public string MagazineTheme { get; set; }
 
-        private SearchMagazinePresenter searchMagazinePresenter;
-
-        public void AttachPresenter(SearchMagazinePresenter searchMagazinePresenter)
-        {
-            this.searchMagazinePresenter = searchMagazinePresenter;
-        }
+        private SearchMagazinePresenter _searchMagazinePresenter;
 
         public FormSearchMagazine()
         {
             InitializeComponent();
+            _searchMagazinePresenter = new SearchMagazinePresenter(this);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

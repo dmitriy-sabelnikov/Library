@@ -20,18 +20,14 @@ namespace Library
         public DateTime ReleaseDate { get; set; }
         public decimal Periodicity { get; set; }
 
-        private SearchNewspaperPresenter searchNewspaperPresenter;
+        private SearchNewspaperPresenter _searchNewspaperPresenter;
 
         public FormSearchNewspaper()
         {
             InitializeComponent();
+            _searchNewspaperPresenter = new SearchNewspaperPresenter(this);
         }
 
-        public void AttachPresenter(SearchNewspaperPresenter searchNewspaperPresenter)
-        {
-            this.searchNewspaperPresenter = searchNewspaperPresenter;
-        }
-    
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -44,7 +40,7 @@ namespace Library
             PublishHouse = txtbxPublishHouse.Text;
             ReleaseDate = dtReleaseDate.Value;
             Periodicity = nPeriodicity.Value;
-            searchNewspaperPresenter.SearchNewspaper();
+            _searchNewspaperPresenter.SearchNewspaper();
             this.Close();
         }
     }

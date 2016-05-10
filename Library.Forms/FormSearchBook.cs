@@ -15,7 +15,7 @@ namespace Library
 {
     public partial class FormSearchBook : Form, ISearchBookView
     {
-        private SearchBookPresenter searchBookPresenter;
+        private SearchBookPresenter _searchBookPresenter;
 
         public string Code { get; set; }
         public string Author { get; set; }
@@ -24,11 +24,7 @@ namespace Library
         public FormSearchBook()
         {
             InitializeComponent();
-        }
-
-        public void AttachPresenter (SearchBookPresenter searchBookPresenter)
-        {
-            this.searchBookPresenter = searchBookPresenter;   
+            _searchBookPresenter = new SearchBookPresenter(this);
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -41,7 +37,7 @@ namespace Library
             Code = txtbxCodeBook.Text;
             Author = txtbxAuthor.Text;
             NameBook = txtbxName.Text;
-            searchBookPresenter.SearchBook();
+            _searchBookPresenter.SearchBook();
             this.Close();            
         }
     }

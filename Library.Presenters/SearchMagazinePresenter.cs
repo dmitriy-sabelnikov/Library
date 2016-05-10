@@ -10,19 +10,19 @@ namespace Library.Presenters
 {
     public class SearchMagazinePresenter
     {
-        private ISearchMagazineView m_searchMagazineView;
+        private ISearchMagazineView _searchMagazineView;
 
-        public SearchMagazinePresenter(ISearchMagazineView p_searchMagazineView)
+        public SearchMagazinePresenter(ISearchMagazineView searchMagazineView)
         {
-            m_searchMagazineView = p_searchMagazineView;
+            _searchMagazineView = searchMagazineView;
         }
         
         public void SearchMagazine ()
         {
             GridSource.ResultSearchMagazine= 
                 SearchPublication.FindMagazine(GridSource.BookLibrary.GetAllMagazine(),
-                    m_searchMagazineView.NameMagazine, m_searchMagazineView.PublishHouse,
-                    m_searchMagazineView.PublishMonth, m_searchMagazineView.MagazineTheme);
+                    _searchMagazineView.NameMagazine, _searchMagazineView.PublishHouse,
+                    _searchMagazineView.PublishMonth, _searchMagazineView.MagazineTheme);
         }
 
         public void RefreshGrid(DataGridView gridLibrary)

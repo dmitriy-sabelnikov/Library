@@ -15,7 +15,7 @@ namespace Library.Forms
 {
     public partial class FormAddMagazine : Form, IAddMagazineView
     {
-        private AddMagazinePresenter addMagazinePresenter;
+        private AddMagazinePresenter _addMagazinePresenter;
 
         public string NameMagazine { get; set; }
         public string PublishHouse { get; set; }
@@ -25,11 +25,8 @@ namespace Library.Forms
         public FormAddMagazine()
         {
             InitializeComponent();
-        }
-
-        public void AttachPresenter(AddMagazinePresenter addMagazinePresenter)
-        {
-            this.addMagazinePresenter = addMagazinePresenter;
+            _addMagazinePresenter = new AddMagazinePresenter(this);
+ 
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -49,7 +46,7 @@ namespace Library.Forms
             PublishHouse = txtbxPublishHouse.Text;
             PublishMonth = cbPublishMonth.Text;
             MagazineTheme = txtbxMagazineTheme.Text;
-            addMagazinePresenter.AddMagazine();
+            _addMagazinePresenter.AddMagazine();
             this.Close();
         }
     }

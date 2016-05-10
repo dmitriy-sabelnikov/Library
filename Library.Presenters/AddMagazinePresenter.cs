@@ -10,25 +10,17 @@ namespace Library.Presenters
 {
     public class AddMagazinePresenter
     {
-        private IAddMagazineView m_magazineView; 
+        private IAddMagazineView _magazineView; 
 
-        public AddMagazinePresenter(IAddMagazineView p_magazineView)
+        public AddMagazinePresenter(IAddMagazineView magazineView)
         {
-            m_magazineView = p_magazineView;
+            _magazineView = magazineView;
         }
 
         public void AddMagazine ()
         {
             GridSource.BookLibrary.AddMagazine(
-                m_magazineView.NameMagazine, m_magazineView.PublishHouse, m_magazineView.PublishMonth, m_magazineView.MagazineTheme);
-        }
-
-        public void RefreshGrid(DataGridView gridLibrary)
-        {
-            GridSource.ClearGrid(gridLibrary);
-            GridSource.FillLibraryByBooks(gridLibrary, GridSource.BookLibrary.GetAllBook());
-            GridSource.FillLibraryByNewspapers(gridLibrary, GridSource.BookLibrary.GetAllNewspaper());
-            GridSource.FillLibraryByMagazines(gridLibrary, GridSource.BookLibrary.GetAllMagazine());
+                _magazineView.NameMagazine, _magazineView.PublishHouse, _magazineView.PublishMonth, _magazineView.MagazineTheme);
         }
     }
 }

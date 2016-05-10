@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddBookPresenter.cs" />
+    <Compile Include="LibraryPresenter.cs" />
     <Compile Include="LoadBookXMLPresenter.cs" />
     <Compile Include="AddMagazinePresenter.cs" />
     <Compile Include="AddNewspaperPresenter.cs" />
